@@ -13,129 +13,171 @@
 \usepackage{graphicx}
 
 \begin{document}
-\title{Simple Beamer Class}   
-\author{Sascha Frank} 
+\title{Metasix}   
+\author{Rafael Santana} 
 \date{\today} 
 
 \frame{\titlepage} 
 
-\frame{\frametitle{Table of contents}\tableofcontents} 
+%\frame{\frametitle{Table of contents}\tableofcontents} 
 
 \section{Usando Branchs} 
 
-\frame{\frametitle{Exemplo} 
+\frame{ 
+\begin{figure}[h!]
+\centering
+{\fontsize{1cm}{1em}\selectfont Usando \textit{Branchs}}
+\end{figure}
+}
+
+\frame{\frametitle{Exemplo (parte 1)} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{img/exemplo-01}
 \end{figure}
 }
 
-\frame{\frametitle{Exemplo} 
+\frame{\frametitle{Exemplo (parte 2)} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{img/exemplo-02}
 \end{figure}
 }
 
-\frame{\frametitle{Exemplo} 
+\frame{\frametitle{Exemplo (parte 3)} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{img/exemplo-03}
 \end{figure}
 }
 
-\frame{\frametitle{Exemplo} 
+\frame{\frametitle{Exemplo (parte 4)} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{img/exemplo-04}
 \end{figure}
 }
 
-\frame{\frametitle{Exemplo} 
+\frame{\frametitle{Exemplo (parte 5)} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{img/exemplo-05}
 \end{figure}
 }
-% 
-% \section{Section no. 2} 
-% \subsection{Lists I}
-% \frame{\frametitle{unnumbered lists}
-% \begin{itemize}
-% \item Introduction to  \LaTeX  
-% \item Course 2 
-% \item Termpapers and presentations with \LaTeX 
-% \item Beamer class
-% \end{itemize} 
-% }
-% 
-% \frame{\frametitle{lists with pause}
-% \begin{itemize}
-% \item Introduction to  \LaTeX \pause 
-% \item Course 2 \pause 
-% \item Termpapers and presentations with \LaTeX \pause 
-% \item Beamer class
-% \end{itemize} 
-% }
-% 
-% \subsection{Lists II}
-% \frame{\frametitle{numbered lists}
-% \begin{enumerate}
-% \item Introduction to  \LaTeX  
-% \item Course 2 
-% \item Termpapers and presentations with \LaTeX 
-% \item Beamer class
-% \end{enumerate}
-% }
-% \frame{\frametitle{numbered lists with pause}
-% \begin{enumerate}
-% \item Introduction to  \LaTeX \pause 
-% \item Course 2 \pause 
-% \item Termpapers and presentations with \LaTeX \pause 
-% \item Beamer class
-% \end{enumerate}
-% }
-% 
-% \section{Section no.3} 
-% \subsection{Tables}
-% \frame{\frametitle{Tables}
-% \begin{tabular}{|c|c|c|}
-% \hline
-% \textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
-% \hline
-% WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
-% \hline
-% SS 05 & Sascha Frank & \LaTeX \ Course serial \\
-% \hline
-% \end{tabular}}
-% 
-% 
-% \frame{\frametitle{Tables with pause}
-% \begin{tabular}{c c c}
-% A & B & C \\ 
-% \pause 
-% 1 & 2 & 3 \\  
-% \pause 
-% A & B & C \\ 
-% \end{tabular} }
-% 
-% 
-% \section{Section no. 4}
-% \subsection{blocs}
-% \frame{\frametitle{blocs}
-% 
-% \begin{block}{title of the bloc}
-% bloc text
-% \end{block}
-% 
-% \begin{exampleblock}{title of the bloc}
-% bloc text
-% \end{exampleblock}
-% 
-% 
-% \begin{alertblock}{title of the bloc}
-% bloc text
-% \end{alertblock}
-% }
+
+\frame{\frametitle{Boa Pratica (1)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/solutions-01}
+\end{figure}
+}
+
+\frame{\frametitle{Boa Pratica (2)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/solutions-02}
+\end{figure}
+}
+
+\frame{\frametitle{Modelo para Uso de Branchs} 
+    \begin{itemize}
+        \item existem muitos modelos para uso de \textit{branchs};
+        \newline
+        \item suas vantagens ou desvantagens dependem da necessidade de cada equipe;
+        \newline
+        \item nossa rotina hoje nao exige um modelo complexo.
+    \end{itemize}
+}
+
+\frame{\frametitle{Modelo para Uso de Branchs} 
+    \textit{Branchs} permanentes
+    \begin{itemize}
+        \item \textbf{Master}: \textit{branch} principal; 
+        \newline
+    \end{itemize}
+    \textit{Branchs} de apoio
+    \begin{itemize}
+        \item \textbf{Feature}: usadas durante o desenvolvimento de novas
+            funcionalidades. (e.g, feature-142);
+        \newline
+        \item \textbf{Bug}: usadas para \textit{bugfixes}. (e.g, bug-13);
+        \newline
+        \item \textbf{Enhancement}: usadas para o desenvolvimento de melhorias
+            do projeto. (e.g, enhancement-76).
+    \end{itemize}
+}
+
+\frame{\frametitle{Proposta de Processo de Trabalho (parte 1)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/proposal-01}
+\end{figure}
+}
+
+\frame{\frametitle{Proposta de Processo de Trabalho (parte 2)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/proposal-02}
+\end{figure}
+}
+
+\frame{\frametitle{Proposta de Processo de Trabalho (parte 3)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/proposal-03}
+\end{figure}
+}
+
+\frame{\frametitle{Proposta de Processo de Trabalho (parte 3)} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/proposal-04}
+\end{figure}
+}
+
+\section{Alterações ao Esquema de Banco do Cube} 
+
+\frame{ 
+\begin{figure}[h!]
+\centering
+{\fontsize{1cm}{1em}\selectfont Esquema de banco do Cube}
+\end{figure}
+}
+
+\frame{\frametitle{Contratempos} 
+    \begin{itemize}
+        \item perdemos o processo que tinhamos para atualizacao do esquema de
+            banco do Cube;
+        \newline
+        \item dificuldade para criar ou manter ambientes de desenvolvimento
+            atualizados;
+        \newline
+        \item contratempos e sobrecarga da equipe de BD.
+    \end{itemize}
+}
+
+\frame{\frametitle{Proposta} 
+    \begin{itemize}
+        \item criar um repositorio para abrigar os \textit{scripts} do Cube.
+            Facilitando o compartilhamento das alteracoes;
+        \newline
+        \item definir um processo de trabalho para manutencao dos
+            \textit{scripts}. Colaboracao entre equipes de Desenv e BD.
+    \end{itemize}
+}
+
+\frame{\frametitle{Proposta de Fluxo de Trabalho} 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{img/fluxo}
+\end{figure}
+}
+
+\frame{ 
+\begin{figure}[h!]
+\centering
+{\fontsize{2cm}{1em}\selectfont Obrigado!}
+\end{figure}
+}
 \end{document}
 
